@@ -2,6 +2,10 @@
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <!-- Location Permissions -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -12,7 +16,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplicationINT226">
 
-        <!-- ClassCApep is the main launcher activity -->
+        <!-- Main Launcher Activity -->
         <activity
             android:name=".ClassCApep"
             android:exported="true"
@@ -22,15 +26,19 @@
 
             <intent-filter>
 
-                <!-- Application Entry Point -->
                 <action android:name="android.intent.action.MAIN" />
 
-                <!-- Show app in launcher -->
                 <category android:name="android.intent.category.LAUNCHER" />
 
             </intent-filter>
 
         </activity>
+
+        <!-- GPS Location Activity -->
+        <activity
+            android:name=".RealGPSLocation"
+            android:exported="false"
+            android:label="Real GPS Location" />
 
     </application>
 
