@@ -1,5 +1,5 @@
 <div align="center">
-# 🎓 **Student Directory App**
+# 🎓 Student Directory App
 
 ### **A Local Student Record Management Android Application**
 
