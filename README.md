@@ -1,3 +1,4 @@
+#Student Directory App
 Student Directory App
 An Android student-records application built with Kotlin,
 Jetpack Compose, Room Database, and Kotlin Flow.
@@ -34,21 +35,6 @@ Kotlin Flow          Observable stream of student records
 AndroidX ViewModel   Holds and exposes UI data
 ViewModel Factory    Creates the ViewModel with its DAO dependency
 Architecture
-The project follows a simple UI--ViewModel--DAO--Room separation.
-```mermaid
-flowchart TD
-    A[MainActivity] --> B[StudentScreen - Jetpack Compose]
-    B --> C[StudentViewModel]
-    C -->|observes Flow<List<StudentEntity>>| D[StudentDao]
-    D -->|SELECT * FROM students| E[(Room Database)]
-    F[StudentEntity] --> E
-    G[StudentViewModelFactory] -->|creates with StudentDao| C
-    H[Insert student operation] --> D
-    D -->|@Insert| E
-    E -->|database updates| D
-    D -->|Flow emits updated list| C
-    C -->|student data| B
-```
 Data flow, step by step
 1. App entry: MainActivity.kt is the Android activity entry point
    and hosts the Compose UI.
