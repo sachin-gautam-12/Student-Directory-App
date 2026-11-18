@@ -1,9 +1,17 @@
-<div align="center">🎓 Student Directory App
-A Local Student Record Management Android Application
+<div align="center">
+# 🎓 **Student Directory App**
 
-Kotlin · Jetpack Compose · Room Database · Kotlin Flow · MVVM
-</div>📌 Project Overview
-Student Directory App is an Android application for managing student information through a simple, organized interface. It demonstrates how student records can be entered, stored locally, and displayed using the Room persistence library.
+### **A Local Student Record Management Android Application**
+
+**Kotlin · Jetpack Compose · Room Database · Kotlin Flow · MVVM**
+
+</div>
+
+---
+
+## 📌 **Project Overview**
+
+**Student Directory App** is an Android application for managing student information through a simple, organized interface. It demonstrates how student records can be entered, stored locally, and displayed using the Room persistence library.
 
 The app interface contains a student-entry form and a stored-records section. When no records are available, an empty-state message is displayed. When records are available, they appear as individual student cards.
 ✨ Key Features
